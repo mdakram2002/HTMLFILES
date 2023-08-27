@@ -1,0 +1,39 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  background-color: black;
+  color: yellow;
+  height: 20px;
+  width: 70px;
+}
+
+.calsy {
+  color: white;
+  background-color: black;
+  height: 110px;
+  width: 190px;
+  margin-top: 20px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="button"] {
+  background-color: black;
+  color: white;
+  border: 1px solid yellow;
+  width: 100%;
+}
+
+input[type="text"] {
+  background-color: black;
+  color: white;
+  border: 1px solid yellow;
+  width: 100%;
+}

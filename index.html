@@ -1,0 +1,62 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-DoList</title>
+    <link rel="stylesheet" href="stayal.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="row">To-DoList</h1>
+      <br />
+      <br />
+      <div class="row">
+        <form>
+          <div class="class-input">
+            <input
+              type="text"
+              placeholder="To-Do-Items"
+              id="box"
+              class="input"
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <input
+              type="button"
+              value="Add"
+              class="form-group1"
+              onclick="add_item()"
+            />
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <ul id="list_item"></ul>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      function add_item() {
+        let item = document.getElementById("box");
+        let list_item = document.getElementById("list_item");
+
+        if ((item.vlaue = !"")) {
+          let make_li = document.createElement("li");
+          make_li.appendChild(document.createTextNode(item.vlaue));
+          list_item.appendChild(make_li);
+          item.vlaue = "";
+
+          make_li.onclick = function () {
+            this.parentNode.removeChild(this);
+          };
+        } else {
+          alert("Please add a value to item ");
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -4,32 +4,222 @@
   margin: 0;
   padding: 0;
 }
-body {
-  background-color: rgb(43, 171, 200);
-  color: white;
+
+html {
+  scroll-behavior: smooth;
 }
-.clock {
-  height: 50px;
-  width: 200px;
+/* CSS Variable */
+
+/* Navigation bar */
+#navbar {
+  width: auto;
+  display: flex;
+  position: sticky;
+  top: 0px;
+  /* flex-direction: column; */
+}
+#navbar::before {
+  content: "";
   background-color: black;
-  border: 2px solid chocolate;
-  border-radius: 5px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+#navbar ul li {
+  list-style: none;
+  font: 1.3rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: larger;
-  font-weight: 500;
-  letter-spacing: 3px;
+  justify-self: center;
+}
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 2px 23px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: rgb(248, 248, 76);
 }
 
-.container {
-  /* height: 50vw;
-  width: 100vw;
+/* Navigation bar: logo and image  */
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  height: 50px;
+  margin: 3px 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Navigation bar: list stayling  */
+ul {
   display: flex;
   align-items: center;
-  justify-content: center; */
+}
+/* Home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 200px;
+  height: 470px;
+}
+#home::before {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  background: url(bg1.1.png);
+  /* height: 74%; */
+  height: 540px;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+}
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Service Section */
+#services {
+  display: flex;
+  align-items: center;
+  margin: 34px;
+  /* margin-bottom: 20px; */
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 30px;
+  background-color: rgb(253, 208, 208);
+}
+#services .box {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+#services .box img {
+  display: block;
+  margin: auto;
+  height: 160px;
+  width: 300px;
+}
+#services .box img {
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+/* Client Section */
+#client-service {
+  height: 344px;
+  object-fit: cover;
+}
+#client-service::before {
+  content: "";
+  position: absolute;
+  background: url("bg.jpg");
+  height: 55%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img {
+  height: 140px;
+  cursor: pointer;
+}
+
+.client-items {
+  padding: 15px;
+}
+
+/* Contect Section */
+#contect {
+  position: relative;
+}
+
+#contect::before {
+  content: "";
+  position: absolute;
+  background: url("contact.jpg");
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+#contact-box form {
+  width: 50%;
+}
+#contact-box label {
+  font-size: 1.3rem;
+}
+#contact-box input,
+#contact-box textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+}
+
+/* footer section */
+footer {
+  color: white;
+  background-color: black;
+  padding: 12px 20px;
+}
+footer a {
+  text-decoration: none;
+}
+/* Urility Section */
+.h-primary {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2.8rem;
+  padding: 12px;
+  font-weight: 650;
+}
+.h-secondry {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 3.2rem;
+  padding: 12px;
+  font-weight: 650;
+}
+.btn {
+  color: white;
+  background-color: brown;
+  padding: 6px 20px;
+  border: 2px solid white;
+  margin: 15px;
+  border-radius: 5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: rgb(248, 248, 76);
+  color: black;
+}
+.center {
+  text-align: center;
 }

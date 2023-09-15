@@ -1,0 +1,148 @@
+/** @format */
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav_class ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 64px;
+  background-color: black;
+  color: white;
+}
+
+nav ul li {
+  padding: 0 12px;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+nav ul li:hover {
+  background-color: rgb(16, 18, 6);
+  color: white
+}
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+.brand img {
+  width: 44px;
+}
+
+img {
+  display: cover;
+}
+
+.container {
+  min-height: 70vh;
+  background-color: black;
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular";
+  display: flex;
+  margin: 24px auto;
+  width: 70%;
+  border-radius: 12px;
+  padding: 34px;
+  background-image: url("bg.jpg");
+  background-size: cover;
+}
+.botton {
+  position: sticky;
+  height: 130px;
+  background-color: black;
+  color: white;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-solid {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+#myProgressBar {
+  width: 100vw;
+  cursor: pointer;
+}
+
+.botton {
+  color: white;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.icon {
+  height: 80px;
+  width: 100vw;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon i {
+  cursor: pointer;
+}
+
+.foot {
+  background-color: black;
+  height: 30px;
+  font-size: 0.8rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.songItemContainer {
+  margin-top: 50px;
+}
+
+.songItem {
+  height: 50px;
+  display: flex;
+  background-color: white;
+  width: 80%;
+  color: black;
+  margin: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 34px;
+}
+
+.songItem img {
+  width: 43px;
+  margin: 0 23px;
+  border-radius: 34px;
+}
+
+.timestamp {
+  margin: 0 13px;
+  cursor: pointer;
+}
+.songInfo {
+  /* position: absolute; 
+  left: 10vw; */
+  padding: bottom 0;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  font-family: "Lucida Sans";
+}
